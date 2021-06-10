@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @keyframes slidiein {
+        0%{
+            left: 0;
+            top: 0;
+            background-color:yellow;
+            }
+            50%{
+                left: 150px;
+                top:100px
+                background-color: green;  
+            }
+        100%{
+            left: 800px;
+            top: 0;
+            background-color: red;
+            }
+    }
+    .stage{
+        background-color:lightgray;
+        height:200px;
+        min-width: 500px;
+    }
+    .ball{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color:blue;
+        position:absolute;
+    }
+    .stage:hover .ball{
+        animation: slidiein 3s ease-in-out 1s infinite alternate;
+    }
+
+</style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
