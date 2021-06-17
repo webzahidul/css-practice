@@ -7,13 +7,13 @@ main{
     max-width: 90%;
     margin: 0 auto;
 }
-.top-players, .blogs{
+.top-players, .blogs, .courses{
     display:grid;
     gap:30px ;
     margin-top: 20px;
     place-items: center;
 }
-.top-players{
+.top-players, .courses{
     grid-template-columns: repeat(3, 1fr);
 }
 .blogs{
@@ -33,10 +33,17 @@ margin-right:20px ;
 }
 
 .filled{
-    color:goldenrod;
+    color:gold;
 }
 .unfilled{
-    color:aqua;
+    color:lightgray;
+}
+.course-info{
+    display:flex;
+}
+.course img{
+    width:200px;
+    height: 50px;
 }
 @media (max-width:992px){
     .top-players{
