@@ -2,8 +2,21 @@
     margin:0;
     padding:0;
 }
+body{
+    background-color: darkgray;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    background-color:white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;;
+}
+.section-title{
+    color:aqua
+}
 main{
-    width: 1200px;
+    width: 900px;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -43,18 +56,18 @@ margin-right:20px ;
 }
 .course img{
     width:200px;
-    height: 50px;
+    height:100px;
 }
 @media (max-width:992px){
-    .top-players{
+    .top-players, .courses{
         grid-template-columns: repeat(2, 1fr);  
     }  
-    .blogs{
+    .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width:688px){
-    .top-players{
+    .top-players, .courses{
         grid-template-columns: repeat(1, 1fr);  
     } 
     .blog{
