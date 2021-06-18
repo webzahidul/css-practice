@@ -53,6 +53,10 @@ margin-right:20px ;
 }
 .course-info{
     display:flex;
+    font-size:small;
+}
+.rating{
+    padding-right: 10px;
 }
 .course img{
     width:200px;
